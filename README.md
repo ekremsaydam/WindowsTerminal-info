@@ -1,4 +1,6 @@
 # winget Aracının Kullanımı ile Windows Terminal ve oh-my-posh Yüklemesi
+
+## Windows için
 [Use the winget tool to install and manage applications](https://learn.microsoft.com/en-us/windows/package-manager/winget/) \
 [upgrade command (winget)](https://learn.microsoft.com/en-us/windows/package-manager/winget/upgrade)
 Powershell yönetici olarak çalıştırılıp aşağıdaki komutlar uygulanır. 
@@ -39,4 +41,46 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 Varolan Theme leri görüntülemek için aşağıdaki komut kullanılır.
 ```
 Get-PoshThemes
+```
+
+Windows Terminal `CTRL + SHIFT + Mouse Scroll Wheel` (Farenin kaydırma tekerleği) Windows Terminal ekranının arka planını transparan yapmak için kullanılabilir.
+
+## Linux için
+[Set up your terminal on Linux](https://ohmyposh.dev/docs/installation/linux)
+```
+$ sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+$ sudo chmod +x /usr/local/bin/oh-my-posh
+```
+
+Teheme için
+```
+$ mkdir ~/.poshthemes
+$ wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
+$ unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
+$ chmod u+rw ~/.poshthemes/*.omp.*
+$ rm ~/.poshthemes/themes.zip
+```
+```
+$ eval "$(oh-my-posh init bash --config ~~/.poshthemes/jandedobbeleer.omp.json)"
+$ eval "$(oh-my-posh init bash --config ~/.poshthemes/powerlevel10k_rainbow.omp.json)"
+$ exec bash
+```
+# Tutorial: Set up a custom prompt for PowerShell or WSL with Oh My Posh
+[Tutorial: Set up a custom prompt for PowerShell or WSL with Oh My Posh](https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup)
+
+[Terminal-Icons github repo](https://github.com/devblackops/Terminal-Icons)
+```
+> Install-Module -Name Terminal-Icons -Repository PSGallery
+> Import-Module -Name Terminal-Icons
+> code $PROFILE
+
+Import-Module -Name Terminal-Icons
+```
+
+# 
+[Appearance settings in Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/customize-settings/appearance)
+
+```
+eval "$(oh-my-posh init bash --config ~/jandedobbeleer.omp.json)"
+
 ```
