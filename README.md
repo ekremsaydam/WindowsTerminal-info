@@ -1,4 +1,4 @@
-# winget Aracının Kullanımı ile Windows Terminal ve oh-my push Yüklemesi
+# winget Aracının Kullanımı ile Windows Terminal ve oh-my-posh Yüklemesi
 [Use the winget tool to install and manage applications](https://learn.microsoft.com/en-us/windows/package-manager/winget/) \
 [upgrade command (winget)](https://learn.microsoft.com/en-us/windows/package-manager/winget/upgrade)
 Powershell yönetici olarak çalıştırılıp aşağıdaki komutlar uygulanır. 
