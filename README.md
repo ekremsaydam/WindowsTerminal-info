@@ -43,6 +43,11 @@ Varolan Theme leri görüntülemek için aşağıdaki komut kullanılır.
 Get-PoshThemes
 ```
 
+Yapılandırma ile ilgili bilgileri gösterir.
+```
+Get-PSReadLineOption
+```
+
 Windows Terminal `CTRL + SHIFT + Mouse Scroll Wheel` (Farenin kaydırma tekerleği) Windows Terminal ekranının arka planını transparan yapmak için kullanılabilir.
 
 ## Linux için
