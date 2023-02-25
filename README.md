@@ -3,7 +3,7 @@
 ## Windows için
 [Use the winget tool to install and manage applications](https://learn.microsoft.com/en-us/windows/package-manager/winget/) \
 [upgrade command (winget)](https://learn.microsoft.com/en-us/windows/package-manager/winget/upgrade)
-Powershell yönetici olarak çalıştırılıp aşağıdaki komutlar uygulanır. 
+Powershell yönetici olarak çalıştırılıp aşağıdaki komutlar uygulanır.
 ```
 > winget upgrade
 > winget upgrade --all
@@ -37,6 +37,9 @@ Daha önce kullanılan komutları önerilerde liste şeklinde sunması için kul
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 ```
+
+`Get-PSReadLineOption` komut çıktısının `HistorySavePath` özelliği girilen komutların hangi log dosyası içerisinde tutulduğunun yol (path) bilgisini verir.
+
 [oh-my-posh Themes](https://ohmyposh.dev/docs/themes)
 Varolan Theme leri görüntülemek için aşağıdaki komut kullanılır.
 ```
@@ -77,7 +80,7 @@ $ exec bash
 Import-Module -Name Terminal-Icons
 ```
 
-# 
+#
 [Appearance settings in Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/customize-settings/appearance)
 
 ```
